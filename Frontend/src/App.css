@@ -1,0 +1,214 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+main{
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hide{
+  visibility: hidden;
+}
+header{ 
+  background-color: #265073;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 20px; */
+  padding: 1% 15px;
+  color: white;
+  /* margin-bottom: 30px; */
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+header a.logo{
+  font-weight: bold;
+  /* font-size: 1.5rem; */
+}
+
+header nav{
+  display: flex;
+  gap: 15px;
+}
+
+.Message-container{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f6f6f6; */
+  width:100%;
+  height: calc(83vh - 58px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.message-left, .message-right{
+  position: relative;
+list-style: none;
+padding: 8px 12px;
+margin: 12px;
+max-width: 80%;
+font-size: 19px;
+word-wrap: break-word;
+}
+
+
+.message-left .message .user {
+  color: rgb(248, 248, 250);
+  font-weight: bold;
+  background-color:#2d2d2d;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  margin-bottom: 5px;
+  border-radius: 20px 20px 0px 0px; 
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.message-right .message .user {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color:#ffffff;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  margin-bottom: 10px;
+  border-radius: 20px 20px 0px 0px; 
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.message-left{
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #fff;
+}
+
+.message-right{
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color: #000000;
+  color: #f6f6f6;
+}
+
+.message-left >p >span,
+.message-right >p >span{
+  display: block;
+  font-size: 10px;
+}
+
+.message-form{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+
+.message-input{
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #ffffff;
+  border-radius: 20px 0px 0px 20px;
+}
+.send-button{
+  font-size: 16px;
+  border: none;
+  padding: 18px 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+}
+.message-left .message span:nth-of-type(3) {
+  color: #000000; 
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.message-right .message span:nth-of-type(3) {
+  color: #ffffff;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.message-left .message .content{
+  font-size: bolder;
+  color: #000;
+  margin-top: 10px;
+  font-size: large;
+  font-style:normal;
+}
+
+.message-right .message .content{
+  font-size: bolder;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: large;
+  font-style:normal;
+}
+
+.light-theme {
+  background-color: rgb(227, 235, 244);
+}
+.light-theme .message-left{
+  background-color: rgb(255, 255, 255);
+}
+.dark-theme{
+  background-color: rgb(39, 38, 38);
+}
+
+.dark-theme {
+  background-color: rgb(121, 120, 120);
+}
+
+.dark-theme .message-left .message .user {
+  background-color: white;
+  color: #010101; /* Change user name color to white */
+}
+.dark-theme .message-left{
+  background-color: #2d2d2d;
+}
+.dark-theme .message-left .message span:nth-of-type(3) {
+  color: #ffffff; /* Change timestamp color to white */
+}
+
+.dark-theme .message-left .message .content {
+  color: #ffffff; /* Change message content color to white */
+}
+
+/* right side */
+.dark-theme .message-right .message .user {
+  background-color: rgb(12, 12, 12);
+  color: #fffefe; /* Change user name color to white */
+}
+.dark-theme .message-right{
+  background-color: #ffffff;
+  
+}
+.dark-theme .message-right .message span:nth-of-type(3) {
+  color: #000000; /* Change timestamp color to white */
+}
+
+.dark-theme .message-right .message .content {
+  color: #000000; /* Change message content color to white */
+}
+
+
